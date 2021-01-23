@@ -18,9 +18,10 @@ app.use(helmet())
 app.disable('x-powered-by')
 app.disable('etag')
 
-const port = process.env.PORT || 3000
+const port = process.env.EXPRESS_PORT || 3000
 const server = http.createServer(app)
 
+require('./src/cron')
 require('./src/presenters/routes')(app)
 app.get('/', (_, res) => res.sendFile(path.join(__dirname, './public', 'index.html')))
 app.use((_, res) => res.status(404).json({ error: [{ title: '404', message: 'Route not found' }] }))

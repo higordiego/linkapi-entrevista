@@ -1,0 +1,11 @@
+# MONGODB
+DB_DATABASE_URL="mongodb://mongodb_linkapi/linkapi"
+
+# EXPRESS PORT
+EXPRESS_PORT="3000"
+
+# Integration PIPEDRIVE
+INTEGRATION_PIPEDRIVE_TOKEN="SEU TOKEN AQUI"
+INTEGRATION_PIPEDRIVE_URL="https://api.pipedrive.com/v1/"
+
+

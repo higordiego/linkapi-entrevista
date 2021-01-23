@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node idnex.js"
+    "start": "node index.js"
   },
   "repository": "git@github.com:higordiego/linkapi-entrevista.git",
   "author": "Higor Diego <higordiegoti@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",

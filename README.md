@@ -28,3 +28,39 @@ Deverá construir uma API RESTful usando a tecnologia NodeJS.
     ● Legibilidade
     ● Boas práticas de desenvolvimento de API RESTful
     ● Performance
+
+
+## Iniciando o projeto
+
+Para iniciar o projeto siga os passos abaixo.
+
+### Criar .env do projeto
+
+```dotenv
+# MONGODB
+DB_DATABASE_URL="mongodb://mongodb_linkapi/linkapi" <-- caso for usar o docker continue com essa configuração.
+
+# EXPRESS PORT
+EXPRESS_PORT="3000" <-- porta de entrada da aplicação. 
+
+# Integration PIPEDRIVE
+INTEGRATION_PIPEDRIVE_TOKEN="SEU TOKEN AQUI" <-- token do pipedrive
+INTEGRATION_PIPEDRIVE_URL="https://api.pipedrive.com/v1/"
+```
+
+### Instalando dependências.
+
+```shell
+yarn install
+```
+
+### Iniciando o projeto com o docker compose.
+```shell
+docker-compose up -d
+```
+
+### Iniciando o projeto sem o docker
+
+```shell
+yarn start
+```
