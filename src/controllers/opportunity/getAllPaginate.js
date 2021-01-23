@@ -10,7 +10,6 @@ exports.handler = async (req, res) => {
         let result = await findAllPaginateAggregateNotQuery('opportunities', page, limit || 10)
         return res.status(200).json(result)
     } catch (error) {
-        console.log('error', error)
         return res.status(500).json({ error: [{ title: 'Error interno', message: error.message }] })
     }
 }
