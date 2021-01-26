@@ -1,4 +1,4 @@
-# linkapi-entrevista
+# Linkapi Entrevista
 
 ## Instruções gerais
 Os Kapivaras trabalham em um ambiente dinâmico, com grandes responsabilidades e muitas decisões que devem ser tomadas rapidamente. Nesta fase iremos ter um teste técnico. #dreamteam #kapivara
@@ -63,4 +63,10 @@ docker-compose up -d
 
 ```shell
 yarn start
+```
+
+## Pegar todas as oportunidades
+
+```shell
+  curl --location --request GET 'http://localhost:3000/api/opportunities?page=1&limit=10'
 ```
